@@ -46,3 +46,22 @@ Contact Rebekah at (360) 545-5632
 - Washington Women Lawyers, Capitol Chapter, Board Member
 - Thurston County Bar Association
 - Washington State Bar Association, WSBA No. 38435
+
+---
+
+## Sooyoung “Sue” Lee — Legal Assistant & Bookkeeper
+
+**Focus:** Bookkeeping · Office Management · Bilingual Support (Korean/English)
+
+We are delighted to introduce Sooyoung “Sue” Lee, an integral part of the Birch Street Law team, serving as a Legal Assistant and Bookkeeper. Sooyoung is dedicated to maintaining the smooth financial and administrative operations of our firm, ensuring meticulous attention to detail in all aspects of her work.
+
+Sooyoung has many years of experience in office management, finance and customer service. Her previous experience includes several years as the office manager for a dental office in Olympia, Washington. She also previously worked at Olympia Federal Savings in Olympia, and UniBank in Federal Way, where she gained extensive experience handling a high volume of financial transactions, receiving and wiring funds, and providing bank teller services.
+
+Originally from Seoul, South Korea, Sue now resides in Lilliwaup, Washington. When she’s not at the office, Sooyoung enjoys traveling and exploring the beaches of Hood Canal, having a particular love for shellfish. At home, you can find her relaxing and catching up on the latest Korean dramas or enjoying a shopping trip.
+
+Contact Sooyoung at (360) 358-7445 or via email at sooyoung@birchstreetlaw.com
+
+### Education
+- **BA in International Studies** from Bunkyo University, Japan
+- **Certificate in Community Studies** from Beppu University, Japan
+- **English as a Second Language Certificate** from Rutgers University in Newark, New Jersey

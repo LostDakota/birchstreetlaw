@@ -1,19 +1,19 @@
 <!--
-  about/+page.svelte — Attorney Bios
+  about/+page.svelte — Team Bios
 -->
 <script>
   import BirchDivider from '$lib/BirchDivider.svelte';
 </script>
 
 <svelte:head>
-  <title>About Our Attorneys — Birch Street Law PLLC</title>
-  <meta name="description" content="Meet the attorneys of Birch Street Law PLLC: David P. Sisk (Managing Attorney) and Rebekah Zinn (Retired Superior Court Commissioner and Mediator)." />
+  <title>About Our Team — Birch Street Law PLLC</title>
+  <meta name="description" content="Meet the team at Birch Street Law PLLC: David P. Sisk (Managing Attorney), Rebekah Zinn (Retired Superior Court Commissioner and Mediator), and Sooyoung “Sue” Lee (Legal Assistant & Bookkeeper)." />
 </svelte:head>
 
 <!-- Page Hero -->
 <div class="page-hero">
   <div class="container">
-    <h1>Our Attorneys</h1>
+    <h1>Our Team</h1>
     <p>Experienced, caring advocates who understand what's at stake.</p>
   </div>
 </div>
@@ -121,6 +121,41 @@
   </div>
 </section>
 
+<BirchDivider />
+
+<!-- Sooyoung “Sue” Lee -->
+<section class="section">
+  <div class="container">
+    <div class="bio-layout">
+      <div class="bio-avatar">
+        <div class="bio-initial" aria-hidden="true">SL</div>
+      </div>
+      <div class="bio-content">
+        <p class="bio-title">Legal Assistant & Bookkeeper</p>
+        <h2>Sooyoung “Sue” Lee</h2>
+        <p class="bio-focus">
+          Bookkeeping · Office Management · Bilingual Support (Korean/English)
+        </p>
+
+        <p>
+          We are delighted to introduce Sooyoung “Sue” Lee, an integral part of the Birch Street Law team, serving as a Legal Assistant and Bookkeeper. Sooyoung is dedicated to maintaining the smooth financial and administrative operations of our firm, ensuring meticulous attention to detail in all aspects of her work.
+        </p>
+        <p>
+          Sooyoung has many years of experience in office management, finance and customer service. Her previous experience includes several years as the office manager for a dental office in Olympia, Washington. She also previously worked at Olympia Federal Savings in Olympia, and UniBank in Federal Way, where she gained extensive experience handling a high volume of financial transactions, receiving and wiring funds, and providing bank teller services.
+        </p>
+        <p>
+          Originally from Seoul, South Korea, Sue now resides in Lilliwaup, Washington. When she’s not at the office, Sooyoung enjoys traveling and exploring the beaches of Hood Canal, having a particular love for shellfish. At home, you can find her relaxing and catching up on the latest Korean dramas or enjoying a shopping trip.
+        </p>
+        <p>
+          <strong>Education:</strong> BA in International Studies from Bunkyo University, Japan; Certificate in Community Studies from Beppu University, Japan; English as a Second Language Certificate from Rutgers University in Newark, New Jersey.
+        </p>
+        <a href="tel:13603587445" class="btn btn-primary mt-3">(360) 358-7445</a>
+        <a href="mailto:sooyoung@birchstreetlaw.com" class="btn btn-secondary mt-3 ml-2">sooyoung@birchstreetlaw.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <style>
   .bio-layout {
     display: grid;
@@ -195,5 +230,20 @@
   .bio-content h2 {
     margin-bottom: 0.25rem;
     color: var(--navy);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--navy);
+    border: 2px solid var(--navy);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--navy);
+    color: var(--white);
+  }
+
+  .ml-2 {
+    margin-left: 0.5rem;
   }
 </style>
