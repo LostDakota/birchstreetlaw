@@ -2,7 +2,7 @@
 # build.yml — Birch Street Law PLLC CI/CD Pipeline
 #
 # Triggers on push to main branch.
-# Builds the SvelteKit static site and deploys via SFTP to Dreamhost.
+# Builds the SvelteKit static site and deploys via FTP to Dreamhost.
 # ============================================================
 
 name: Build & Deploy
@@ -45,14 +45,14 @@ jobs:
           path: build/
           retention-days: 7
 
-      # 6. Deploy via SFTP to Dreamhost
-      - name: Deploy via SFTP to Dreamhost
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      # 6. Deploy via FTP to Dreamhost
+      - name: Deploy via FTP to Dreamhost
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          username: ${{ secrets.DREAMHOST_SFTP_USERNAME }}
           server: ${{ secrets.DREAMHOST_SFTP_HOST }}
+          username: ${{ secrets.DREAMHOST_SFTP_USERNAME }}
           password: ${{ secrets.DREAMHOST_SFTP_PASSWORD }}
-          local_path: './build/'
-          remote_path: ${{ secrets.DREAMHOST_SFTP_REMOTE_PATH }}
-          sftp_only: true
-          delete_remote_files: false
+          local-dir: ./build/
+          server-dir: /home/dh_wzakre/birchstreetlaw.com/
+          protocol: ftp
+          port: 21
