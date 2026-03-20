@@ -21,16 +21,28 @@ Contact David at (360) 358-7445
 
 ---
 
-## Rebekah Zinn — Mediator & Of Counsel
+## Rebekah Zinn — Associate Attorney
 
-**Focus:** Mediation · Dispute Resolution · Family Law · Probate · Civil Litigation
+**Focus:** Estate Planning · Probate · Elder Law · Guardianship · TEDRA · Family Law · Mediation
 
-Rebekah Zinn is a retired Washington State Superior Court Commissioner with 18 years of experience in trial and appellate courts. Her deep expertise spans multiple areas of law, and she brings a practical, grounded understanding of what is truly at stake when a judicial officer decides a case or a matter goes to trial.
+Rebekah Zinn has extensive experience guiding people through major life transitions with grace and compassion. She is passionate about helping others through her Elder Law practice, focusing on estate planning, probates, and elder abuse. As a retired Superior Court Commissioner in Thurston County, she presided over the Probate & Guardianship docket for twelve years. She has taught and volunteered extensively on disability and guardianship law for over a decade. She has a deep understanding of elder abuse, protection orders, and trust and estate litigation (TEDRA): she is ready to litigate and also to work creatively on other solutions that may be in the best interest of the elder or person with a disability. Rebekah also serves as a mediator, assisting people in crafting their own solutions to avoid expensive and stressful trials.
 
-Attorney Rebekah Zinn's experience as a Court Commissioner (retired) enables her to help parties resolve disputes outside of court as a mediator by facilitating open dialogue and finding fair, mutually agreeable solutions. As a mediator, Ms. Zinn's role is to be neutral — to help parties reach their own agreements. She facilitates civil, fair conversations where all voices can be heard in a safe environment.
+Contact Rebekah at (360) 545-5632
 
-She will only share her experience and understanding when the parties want that information, and solely as background information to help reach resolutions — not as legal advice intended to sway any decision. The parties can have their own lawyers present and, if they do, Ms. Zinn highly encourages the parties to listen to their lawyer's advice.
+### Practice Areas
+- **Probate, Estate, Guardianship, & Elder Law:** 12 years of experience
+- **Family Law:** 5 years of experience
+- **Civil Litigation:** 13 years reviewing summary judgments, appeals, evidence, and pretrial motions for judges. An additional 3 years reviewing civil litigation appeals.
+- **Unlawful Detainer:** 8 years of experience presiding over the unlawful detainer (eviction) docket.
 
-Ms. Zinn believes mediation can be transformative. By resolving disputes outside of court, parties often achieve outcomes that are more creative, more lasting, and less costly — financially and emotionally — than going to trial.
+### Education
+- Dispute Resolution Center of Thurston County
+- Seattle University School of Law
+- Coe College, Cedar Rapids, Iowa
 
-*Note: A full biography for Rebekah Zinn was not available from the live site at time of scraping; the section above uses the content from the mediation FAQ and existing site context. The client should provide the full bio text for this section.*
+### Affiliations
+- Sound Legal Aid, Board Member
+- Mason County Bar Association
+- Washington Women Lawyers, Capitol Chapter, Board Member
+- Thurston County Bar Association
+- Washington State Bar Association, WSBA No. 38435
