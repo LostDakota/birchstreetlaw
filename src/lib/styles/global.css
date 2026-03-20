@@ -1,14 +1,15 @@
 /* ============================================================
    Birch Street Law PLLC — Global Styles
    Color Palette:
-     --green-deep:    #2c4a35  (forest green, primary)
-     --green-mid:     #4a7c59  (medium green)
-     --green-light:   #8ab89a  (light green accent)
-     --cream:         #f5f0e8  (warm off-white background)
-     --cream-dark:    #ede7d9  (slightly darker cream)
-     --gray-warm:     #857f74  (warm gray, body text muted)
-     --gray-dark:     #2d2b27  (near-black for body text)
-     --white:         #ffffff
+     --navy:         #1a2a4a  (deep navy, primary)
+     --navy-mid:     #2d4a7a  (medium navy)
+     --gold:         #c9a84c  (warm gold, accent/CTA)
+     --gold-light:   #e2c97e  (lighter gold)
+     --cream:        #f7f5f2  (warm off-white background)
+     --cream-dark:   #edeae5  (slightly darker, section alt)
+     --gray-warm:    #857f74  (warm gray, muted text)
+     --gray-dark:    #2d2b27  (near-black body text)
+     --white:        #ffffff
    ============================================================ */
 
 *, *::before, *::after {
@@ -18,14 +19,20 @@
 }
 
 :root {
-  --green-deep:  #2c4a35;
-  --green-mid:   #4a7c59;
-  --green-light: #8ab89a;
-  --cream:       #f5f0e8;
-  --cream-dark:  #ede7d9;
+  --navy:        #1a2a4a;
+  --navy-mid:    #2d4a7a;
+  --gold:        #c9a84c;
+  --gold-light:  #e2c97e;
+  --cream:       #f7f5f2;
+  --cream-dark:  #edeae5;
   --gray-warm:   #857f74;
   --gray-dark:   #2d2b27;
   --white:       #ffffff;
+
+  /* Legacy aliases used in components — mapped to new palette */
+  --green-deep:  var(--navy);
+  --green-mid:   var(--navy-mid);
+  --green-light: var(--gold);
 
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans:  'Inter', system-ui, sans-serif;
@@ -58,7 +65,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-serif);
-  color: var(--green-deep);
+  color: var(--navy);
   line-height: 1.25;
   font-weight: 600;
 }
@@ -72,11 +79,11 @@ p { margin-bottom: 1rem; }
 p:last-child { margin-bottom: 0; }
 
 a {
-  color: var(--green-mid);
+  color: var(--navy-mid);
   text-decoration: none;
   transition: color var(--transition);
 }
-a:hover { color: var(--green-deep); text-decoration: underline; }
+a:hover { color: var(--navy); text-decoration: underline; }
 
 /* ── Layout helpers ── */
 
@@ -96,7 +103,7 @@ a:hover { color: var(--green-deep); text-decoration: underline; }
 }
 
 .section--dark {
-  background-color: var(--green-deep);
+  background-color: var(--navy);
   color: var(--cream);
 }
 
@@ -123,29 +130,29 @@ a:hover { color: var(--green-deep); text-decoration: underline; }
 }
 
 .btn-primary {
-  background-color: var(--green-deep);
-  color: var(--white);
-  border: 2px solid var(--green-deep);
+  background-color: var(--gold);
+  color: var(--navy);
+  border: 2px solid var(--gold);
 }
 .btn-primary:hover {
-  background-color: var(--green-mid);
-  border-color: var(--green-mid);
-  color: var(--white);
+  background-color: var(--gold-light);
+  border-color: var(--gold-light);
+  color: var(--navy);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--green-deep);
-  border: 2px solid var(--green-deep);
+  color: var(--navy);
+  border: 2px solid var(--navy);
 }
 .btn-outline:hover {
-  background-color: var(--green-deep);
+  background-color: var(--navy);
   color: var(--white);
 }
 
 .btn-light {
   background-color: var(--cream);
-  color: var(--green-deep);
+  color: var(--navy);
   border: 2px solid var(--cream);
 }
 .btn-light:hover {
@@ -161,7 +168,7 @@ a:hover { color: var(--green-deep); text-decoration: underline; }
   height: 32px;
   margin-inline: auto;
   margin-block: 2rem;
-  opacity: 0.35;
+  opacity: 0.45;
 }
 
 /* ── Utility ── */
@@ -208,18 +215,19 @@ a:hover { color: var(--green-deep); text-decoration: underline; }
 /* ── Page hero (inner pages) ── */
 
 .page-hero {
-  background-color: var(--green-deep);
+  background-color: var(--navy);
   color: var(--cream);
   padding-block: 4rem;
   text-align: center;
+  border-bottom: 4px solid var(--gold);
 }
 
 .page-hero h1 {
-  color: var(--cream);
+  color: var(--white);
 }
 
 .page-hero p {
-  color: var(--green-light);
+  color: var(--gold-light);
   font-size: 1.1rem;
   max-width: 600px;
   margin-inline: auto;
@@ -240,7 +248,7 @@ a:hover { color: var(--green-deep); text-decoration: underline; }
 .faq-question {
   font-family: var(--font-serif);
   font-size: 1.15rem;
-  color: var(--green-deep);
+  color: var(--navy);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -258,7 +266,7 @@ a:hover { color: var(--green-deep); text-decoration: underline; }
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  color: var(--green-mid);
+  color: var(--gold);
   transition: transform var(--transition);
 }
 
@@ -291,7 +299,7 @@ a:hover { color: var(--green-deep); text-decoration: underline; }
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: var(--green-deep);
+  background-color: var(--navy);
   color: var(--white);
   font-family: var(--font-serif);
   font-size: 2rem;
@@ -305,7 +313,7 @@ a:hover { color: var(--green-deep); text-decoration: underline; }
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--green-mid);
+  color: var(--gold);
   font-weight: 500;
   margin-bottom: 0.25rem;
 }
@@ -317,7 +325,7 @@ a:hover { color: var(--green-deep); text-decoration: underline; }
   border-radius: var(--radius);
   padding: 1.75rem;
   box-shadow: var(--shadow-sm);
-  border-top: 3px solid var(--green-light);
+  border-top: 3px solid var(--gold);
   transition: box-shadow var(--transition), transform var(--transition);
 }
 
@@ -329,25 +337,26 @@ a:hover { color: var(--green-deep); text-decoration: underline; }
 .practice-card .icon {
   width: 40px;
   height: 40px;
-  color: var(--green-mid);
+  color: var(--navy-mid);
   margin-bottom: 1rem;
 }
 
 /* ── Footer ── */
 
 footer {
-  background-color: var(--green-deep);
+  background-color: var(--navy);
   color: var(--cream-dark);
   padding-block: 3rem;
   font-size: 0.9rem;
+  border-top: 4px solid var(--gold);
 }
 
 footer a {
-  color: var(--green-light);
+  color: var(--gold-light);
 }
 
 footer a:hover {
-  color: var(--cream);
+  color: var(--white);
 }
 
 .footer-grid {

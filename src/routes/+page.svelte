@@ -1,6 +1,6 @@
 <!--
   +page.svelte — Home Page
-  Hero → intro → practice areas summary → about teaser → CTA
+  Hero → intro → practice areas summary → CTA
 -->
 <script>
   import BirchDivider from '$lib/BirchDivider.svelte';
@@ -17,61 +17,69 @@
   <div class="hero-tree" aria-hidden="true">
     <svg viewBox="0 0 120 400" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!-- trunk -->
-      <rect x="52" y="200" width="16" height="200" rx="4" fill="white" opacity="0.12"/>
+      <rect x="52" y="200" width="16" height="200" rx="4" fill="white" opacity="0.10"/>
       <!-- bark marks -->
-      <rect x="54" y="230" width="12" height="3" rx="1.5" fill="white" opacity="0.08"/>
-      <rect x="54" y="260" width="12" height="3" rx="1.5" fill="white" opacity="0.08"/>
-      <rect x="54" y="290" width="12" height="3" rx="1.5" fill="white" opacity="0.08"/>
-      <rect x="54" y="320" width="12" height="3" rx="1.5" fill="white" opacity="0.08"/>
-      <rect x="54" y="350" width="12" height="3" rx="1.5" fill="white" opacity="0.08"/>
+      <rect x="54" y="230" width="12" height="3" rx="1.5" fill="white" opacity="0.07"/>
+      <rect x="54" y="260" width="12" height="3" rx="1.5" fill="white" opacity="0.07"/>
+      <rect x="54" y="290" width="12" height="3" rx="1.5" fill="white" opacity="0.07"/>
+      <rect x="54" y="320" width="12" height="3" rx="1.5" fill="white" opacity="0.07"/>
+      <rect x="54" y="350" width="12" height="3" rx="1.5" fill="white" opacity="0.07"/>
       <!-- canopy layers -->
-      <ellipse cx="60" cy="160" rx="55" ry="80" fill="white" opacity="0.06"/>
-      <ellipse cx="60" cy="120" rx="45" ry="65" fill="white" opacity="0.07"/>
-      <ellipse cx="60" cy="85" rx="35" ry="55" fill="white" opacity="0.08"/>
-      <ellipse cx="60" cy="55" rx="25" ry="40" fill="white" opacity="0.09"/>
+      <ellipse cx="60" cy="160" rx="55" ry="80" fill="white" opacity="0.05"/>
+      <ellipse cx="60" cy="120" rx="45" ry="65" fill="white" opacity="0.06"/>
+      <ellipse cx="60" cy="85" rx="35" ry="55" fill="white" opacity="0.07"/>
+      <ellipse cx="60" cy="55" rx="25" ry="40" fill="white" opacity="0.08"/>
       <!-- side branches -->
-      <path d="M52 220 Q30 210 15 200" stroke="white" stroke-width="2" opacity="0.1" fill="none"/>
-      <path d="M68 240 Q90 228 105 215" stroke="white" stroke-width="2" opacity="0.1" fill="none"/>
-      <path d="M52 270 Q28 260 12 248" stroke="white" stroke-width="1.5" opacity="0.08" fill="none"/>
+      <path d="M52 220 Q30 210 15 200" stroke="white" stroke-width="2" opacity="0.08" fill="none"/>
+      <path d="M68 240 Q90 228 105 215" stroke="white" stroke-width="2" opacity="0.08" fill="none"/>
+      <path d="M52 270 Q28 260 12 248" stroke="white" stroke-width="1.5" opacity="0.06" fill="none"/>
     </svg>
   </div>
 
   <div class="container hero-content">
     <p class="hero-eyebrow">Shelton, Washington</p>
-    <h1>Compassionate Counsel<br/>for Life's Most<br/>Important Moments</h1>
+    <h1>Birch Street Law PLLC</h1>
+    <p class="hero-tagline">Compassionate Counsel for Life's Most Important Moments</p>
     <p class="hero-sub">
-      Birch Street Law PLLC guides families through probate, guardianship, 
-      estate planning, trust disputes, and mediation — with clarity, care, and experience.
+      The attorneys at Birch Street Law provide legal services to help guide individuals through 
+      some of life's most sensitive legal matters — with clarity and compassion.
     </p>
     <div class="hero-actions">
-      <a href="/contact" class="btn btn-light">Schedule a Consultation</a>
+      <a href="/contact" class="btn btn-gold">Schedule a Consultation</a>
       <a href="/practice-areas" class="btn btn-outline-light">Our Practice Areas</a>
     </div>
   </div>
 </section>
 
-<!-- ── Brief intro ── -->
+<!-- ── Intro text (exact client copy) ── -->
 <section class="section">
   <div class="container">
     <div class="intro-grid">
       <div class="intro-text">
-        <h2>A Firm You Can Rely On</h2>
+        <h2>How We Can Help</h2>
         <p>
-          Founded with a commitment to accessible, thoughtful legal services, Birch Street Law PLLC serves 
-          individuals and families navigating some of life's most challenging transitions. Whether you've 
-          lost a loved one, need to plan for the future, or find yourself in a difficult dispute, we are 
-          here to help you find a path forward.
+          The attorneys at Birch Street Law provide legal services to help guide individuals through 
+          some of life's most sensitive legal matters—probate, guardianship, trust and estate dispute 
+          resolution (including TEDRA petitions), estate planning, elder and vulnerable adult protection 
+          (including VAPOs), and real estate issues—with clarity and compassion.
         </p>
         <p>
-          Our attorneys bring a depth of courtroom experience and a collaborative, holistic philosophy — 
-          always looking for resolutions that minimize cost, conflict, and stress.
+          Our attorneys strive to resolve conflicts efficiently and respectfully, helping parties find 
+          common ground to avoid the expense, uncertainty, and stress of litigation.
         </p>
-        <a href="/about" class="btn btn-primary mt-3">Meet Our Attorneys</a>
+        <p>
+          Attorney Rebekah Zinn's experience as a Court Commissioner (retired) enables her to help 
+          parties resolve disputes outside of court as a mediator by facilitating open dialogue and 
+          finding fair, mutually agreeable solutions.
+        </p>
+        <div class="intro-actions">
+          <a href="/about" class="btn btn-primary">Meet Our Attorneys</a>
+          <a href="/mediation" class="btn btn-outline">Mediation Services</a>
+        </div>
       </div>
       <div class="intro-values">
         <div class="value-item">
           <div class="value-icon">
-            <!-- Scale icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 3v18M3 12h18M5.6 7.2l12.8 9.6M18.4 7.2L5.6 16.8"/>
             </svg>
@@ -83,7 +91,6 @@
         </div>
         <div class="value-item">
           <div class="value-icon">
-            <!-- Heart icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
             </svg>
@@ -95,7 +102,6 @@
         </div>
         <div class="value-item">
           <div class="value-icon">
-            <!-- Handshake icon -->
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 0 0 1.946-.806 3.42 3.42 0 0 1 4.438 0 3.42 3.42 0 0 0 1.946.806 3.42 3.42 0 0 1 3.138 3.138 3.42 3.42 0 0 0 .806 1.946 3.42 3.42 0 0 1 0 4.438 3.42 3.42 0 0 0-.806 1.946 3.42 3.42 0 0 1-3.138 3.138 3.42 3.42 0 0 0-1.946.806 3.42 3.42 0 0 1-4.438 0 3.42 3.42 0 0 0-1.946-.806 3.42 3.42 0 0 1-3.138-3.138 3.42 3.42 0 0 0-.806-1.946 3.42 3.42 0 0 1 0-4.438 3.42 3.42 0 0 0 .806-1.946 3.42 3.42 0 0 1 3.138-3.138z"/>
             </svg>
@@ -116,22 +122,21 @@
 <section class="section section--alt">
   <div class="container">
     <div class="text-center mb-4">
-      <h2>How We Can Help</h2>
+      <h2>Practice Areas</h2>
       <p class="text-muted">Areas of law we handle with depth and dedication.</p>
     </div>
 
     <div class="grid-3">
       {#each [
-        { icon: '⚖️', title: 'Probate', desc: 'Guiding families through the probate process efficiently and with care.' },
-        { icon: '🛡️', title: 'Guardianship', desc: 'Protecting vulnerable individuals through legal guardianship proceedings.' },
-        { icon: '📜', title: 'Estate Planning', desc: 'Wills, trusts, and plans crafted to protect your family and your wishes.' },
-        { icon: '⚡', title: 'TEDRA / Trust Disputes', desc: 'Experienced litigation for trust and estate disputes under Washington\'s TEDRA.' },
-        { icon: '🏠', title: 'Real Estate', desc: 'Easements, boundary disputes, and real estate transaction support.' },
-        { icon: '🤝', title: 'Mediation', desc: 'Neutral, confidential mediation to resolve disputes without the cost of trial.' },
+        { title: 'Probate', desc: 'Guiding families through the probate process efficiently and with care.' },
+        { title: 'Guardianship', desc: 'Protecting vulnerable individuals through legal guardianship proceedings.' },
+        { title: 'Estate Planning', desc: 'Wills, trusts, and plans crafted to protect your family and your wishes.' },
+        { title: 'Trust & Estate Disputes (TEDRA)', desc: 'Experienced litigation for trust and estate disputes under Washington\'s TEDRA.' },
+        { title: 'Elder & Vulnerable Adult Protection', desc: 'Vulnerable Adult Protection Orders (VAPOs) and advocacy for those at risk.' },
+        { title: 'Real Estate', desc: 'Easements, boundary disputes, and real estate transaction support.' },
       ] as area}
         <a href="/practice-areas" class="practice-card-link">
           <div class="practice-card">
-            <span class="practice-emoji">{area.icon}</span>
             <h3>{area.title}</h3>
             <p class="text-muted">{area.desc}</p>
           </div>
@@ -151,12 +156,12 @@
 <section class="section section--dark">
   <div class="container text-center">
     <h2>Ready to Talk?</h2>
-    <p style="color: var(--green-light); max-width: 560px; margin-inline: auto; margin-top: 0.75rem;">
+    <p class="cta-sub">
       Legal questions rarely wait. Reach out today to speak with an attorney about your situation.
       We'll listen carefully and let you know how we can help.
     </p>
     <div class="cta-actions mt-4">
-      <a href="tel:13603587445" class="btn btn-light">(360) 358-7445</a>
+      <a href="tel:13603587445" class="btn btn-gold">(360) 358-7445</a>
       <a href="/contact" class="btn btn-outline-cream">Contact Us</a>
     </div>
   </div>
@@ -166,10 +171,11 @@
   /* ── Hero ── */
   .hero {
     position: relative;
-    background-color: var(--green-deep);
+    background-color: var(--navy);
     color: var(--white);
     padding-block: 6rem 5rem;
     overflow: hidden;
+    border-bottom: 4px solid var(--gold);
   }
 
   .hero-tree {
@@ -197,17 +203,27 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: var(--green-light);
+    color: var(--gold-light);
     margin-bottom: 1rem;
   }
 
   .hero h1 {
     color: var(--white);
+    margin-bottom: 0.5rem;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+  }
+
+  .hero-tagline {
+    font-family: var(--font-serif);
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: var(--gold-light);
     margin-bottom: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
   }
 
   .hero-sub {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: rgba(255,255,255,0.8);
     max-width: 540px;
     margin-bottom: 2.5rem;
@@ -218,6 +234,29 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  .btn-gold {
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    border-radius: var(--radius);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all var(--transition);
+    text-decoration: none !important;
+    background-color: var(--gold);
+    color: var(--navy);
+    border: 2px solid var(--gold);
+  }
+
+  .btn-gold:hover {
+    background-color: var(--gold-light);
+    border-color: var(--gold-light);
+    color: var(--navy);
   }
 
   .btn-outline-light {
@@ -258,6 +297,13 @@
     }
   }
 
+  .intro-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
   .value-item {
     display: grid;
     grid-template-columns: 40px 1fr;
@@ -271,7 +317,7 @@
   .value-icon {
     width: 40px;
     height: 40px;
-    color: var(--green-mid);
+    color: var(--gold);
     margin-top: 2px;
   }
 
@@ -282,6 +328,7 @@
 
   .value-item h4 {
     margin-bottom: 0.25rem;
+    color: var(--navy);
   }
 
   .value-item p {
@@ -296,15 +343,10 @@
     color: inherit;
   }
 
-  .practice-emoji {
-    font-size: 1.75rem;
-    display: block;
-    margin-bottom: 0.75rem;
-  }
-
   .practice-card h3 {
     font-size: 1.05rem;
     margin-bottom: 0.5rem;
+    color: var(--navy);
   }
 
   .practice-card p {
@@ -313,6 +355,13 @@
   }
 
   /* ── CTA ── */
+  .cta-sub {
+    color: var(--gold-light);
+    max-width: 560px;
+    margin-inline: auto;
+    margin-top: 0.75rem;
+  }
+
   .cta-actions {
     display: flex;
     flex-wrap: wrap;

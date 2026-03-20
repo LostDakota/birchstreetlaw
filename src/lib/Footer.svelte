@@ -53,7 +53,7 @@
 
   .footer-tagline {
     font-size: 0.85rem;
-    color: var(--green-light);
+    color: var(--gold-light);
     font-style: italic;
     max-width: 220px;
   }
@@ -64,7 +64,7 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--green-light);
+    color: var(--gold);
     margin-bottom: 0.75rem;
   }
 
@@ -87,6 +87,6 @@
   }
 
   .footer-links a:hover {
-    color: var(--white);
+    color: var(--gold-light);
   }
 </style>

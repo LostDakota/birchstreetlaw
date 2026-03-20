@@ -1,11 +1,13 @@
 ---
-title: Compassionate Counsel for Life's Most Important Moments
-tagline: Birch Street Law PLLC guides families through probate, guardianship, estate planning, trust disputes, and mediation — with clarity, care, and experience.
+title: Birch Street Law PLLC
+tagline: Compassionate Counsel for Life's Most Important Moments
 location: Shelton, Washington
 ---
 
-Birch Street Law PLLC is a boutique law firm in Shelton, Washington, focused on
-probate, guardianship, estate planning, TEDRA litigation, and mediation.
+The attorneys at Birch Street Law provide legal services to help guide individuals through some of life's most sensitive legal matters—probate, guardianship, trust and estate dispute resolution (including TEDRA petitions), estate planning, elder and vulnerable adult protection (including VAPOs), and real estate issues—with clarity and compassion.
 
-Our attorneys bring decades of combined experience and a commitment to
-collaborative, holistic problem-solving.
+Our attorneys strive to resolve conflicts efficiently and respectfully, helping parties find common ground to avoid the expense, uncertainty, and stress of litigation.
+
+Attorney Rebekah Zinn's experience as a Court Commissioner (retired) enables her to help parties resolve disputes outside of court as a mediator by facilitating open dialogue and finding fair, mutually agreeable solutions.
+
+Learn more about our Mediation Services.

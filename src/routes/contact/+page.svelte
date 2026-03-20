@@ -92,13 +92,13 @@
     border-radius: var(--radius);
     padding: 2rem;
     box-shadow: var(--shadow-sm);
-    border-top: 3px solid var(--green-light);
+    border-top: 3px solid var(--gold);
   }
 
   .contact-icon {
     width: 44px;
     height: 44px;
-    color: var(--green-mid);
+    color: var(--gold);
     margin-bottom: 1rem;
   }
 
@@ -115,16 +115,16 @@
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
-    color: var(--green-deep);
+    color: var(--navy);
   }
 
   .contact-detail a {
-    color: var(--green-deep);
+    color: var(--navy);
     text-decoration: none;
   }
 
   .contact-detail a:hover {
-    color: var(--green-mid);
+    color: var(--gold);
     text-decoration: underline;
   }
 
@@ -139,7 +139,7 @@
     background: var(--cream-dark);
     border-radius: var(--radius);
     padding: 2rem;
-    border-left: 4px solid var(--green-light);
+    border-left: 4px solid var(--gold);
     max-width: 700px;
   }
 

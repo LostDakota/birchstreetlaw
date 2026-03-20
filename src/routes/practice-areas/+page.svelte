@@ -172,7 +172,7 @@ David understands the deep attachment people have to their land and homes, and h
 <section class="section section--dark">
   <div class="container text-center">
     <h2>Questions About Your Situation?</h2>
-    <p style="color: var(--green-light); max-width: 540px; margin-inline: auto; margin-top: 0.75rem;">
+    <p style="color: var(--gold-light); max-width: 540px; margin-inline: auto; margin-top: 0.75rem;">
       Every legal matter is unique. Contact Birch Street Law to discuss your specific circumstances 
       and learn how we can help.
     </p>
@@ -210,7 +210,7 @@ David understands the deep attachment people have to their land and homes, and h
   }
 
   .quick-nav-link:hover {
-    color: var(--green-deep);
+    color: var(--navy);
     background-color: var(--cream);
   }
 
@@ -231,7 +231,7 @@ David understands the deep attachment people have to their land and homes, and h
   .area-icon {
     width: 48px;
     height: 48px;
-    color: var(--green-mid);
+    color: var(--gold);
     margin-top: 0.5rem;
   }
 

@@ -1,6 +1,6 @@
 <!-- 
   Nav.svelte
-  Responsive top navigation with mobile hamburger toggle.
+  Responsive top navigation — navy header, logo left, links right.
   Uses Svelte 5 runes syntax ($state, $props).
 -->
 <script>
@@ -31,14 +31,14 @@
     <a href="/" class="logo" onclick={closeMenu}>
       <!-- Small inline birch tree mark -->
       <svg width="28" height="36" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect x="12" y="18" width="4" height="18" rx="1" fill="#8ab89a"/>
-        <path d="M14 18 Q6 12 8 4 Q14 8 14 18Z" fill="#4a7c59"/>
-        <path d="M14 18 Q22 12 20 4 Q14 8 14 18Z" fill="#2c4a35"/>
-        <path d="M14 14 Q8 10 10 3 Q14 7 14 14Z" fill="#4a7c59" opacity="0.6"/>
+        <rect x="12" y="18" width="4" height="18" rx="1" fill="#e2c97e"/>
+        <path d="M14 18 Q6 12 8 4 Q14 8 14 18Z" fill="#2d4a7a"/>
+        <path d="M14 18 Q22 12 20 4 Q14 8 14 18Z" fill="#1a2a4a"/>
+        <path d="M14 14 Q8 10 10 3 Q14 7 14 14Z" fill="#2d4a7a" opacity="0.6"/>
         <!-- bark marks -->
-        <rect x="12.5" y="22" width="3" height="1" rx="0.5" fill="#2c4a35" opacity="0.3"/>
-        <rect x="12.5" y="27" width="3" height="1" rx="0.5" fill="#2c4a35" opacity="0.3"/>
-        <rect x="12.5" y="32" width="3" height="1" rx="0.5" fill="#2c4a35" opacity="0.3"/>
+        <rect x="12.5" y="22" width="3" height="1" rx="0.5" fill="#1a2a4a" opacity="0.3"/>
+        <rect x="12.5" y="27" width="3" height="1" rx="0.5" fill="#1a2a4a" opacity="0.3"/>
+        <rect x="12.5" y="32" width="3" height="1" rx="0.5" fill="#1a2a4a" opacity="0.3"/>
       </svg>
       <span class="logo-text">
         <span class="logo-name">Birch Street Law</span>
@@ -99,9 +99,9 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: var(--white);
-    border-bottom: 1px solid var(--cream-dark);
-    box-shadow: var(--shadow-sm);
+    background: var(--navy);
+    border-bottom: 3px solid var(--gold);
+    box-shadow: var(--shadow-md);
   }
 
   .nav-inner {
@@ -130,7 +130,7 @@
     font-family: var(--font-serif);
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--green-deep);
+    color: var(--white);
     white-space: nowrap;
   }
 
@@ -140,7 +140,7 @@
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--gray-warm);
+    color: var(--gold-light);
   }
 
   /* Desktop nav */
@@ -149,13 +149,14 @@
     align-items: center;
     gap: 0.25rem;
     flex: 1;
+    justify-content: flex-end;
   }
 
   .nav-link {
     padding: 0.4rem 0.75rem;
     font-size: 0.875rem;
     font-weight: 500;
-    color: var(--gray-dark);
+    color: rgba(255,255,255,0.85);
     border-radius: var(--radius);
     transition: color var(--transition), background-color var(--transition);
     text-decoration: none !important;
@@ -163,12 +164,13 @@
 
   .nav-link:hover,
   .nav-link.active {
-    color: var(--green-deep);
-    background-color: var(--cream);
+    color: var(--white);
+    background-color: rgba(255,255,255,0.1);
   }
 
   .nav-link.active {
     font-weight: 600;
+    color: var(--gold-light);
   }
 
   /* CTA */
@@ -176,6 +178,7 @@
     flex-shrink: 0;
     font-size: 0.8rem;
     padding: 0.5rem 1.1rem;
+    margin-left: 0.5rem;
   }
 
   /* Hamburger */
@@ -194,7 +197,7 @@
     display: block;
     width: 24px;
     height: 2px;
-    background-color: var(--green-deep);
+    background-color: var(--white);
     border-radius: 2px;
     transition: all 0.25s ease;
   }
@@ -215,23 +218,23 @@
     display: flex;
     flex-direction: column;
     padding: 1rem 1.5rem 1.5rem;
-    border-top: 1px solid var(--cream-dark);
+    border-top: 1px solid rgba(255,255,255,0.12);
     gap: 0.25rem;
-    background: var(--white);
+    background: var(--navy);
   }
 
   .mobile-link {
     padding: 0.7rem 0.5rem;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--gray-dark);
-    border-bottom: 1px solid var(--cream-dark);
+    color: rgba(255,255,255,0.85);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
     text-decoration: none !important;
   }
 
   .mobile-link.active,
   .mobile-link:hover {
-    color: var(--green-deep);
+    color: var(--gold-light);
   }
 
   .mobile-cta {
