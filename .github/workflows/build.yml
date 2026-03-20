@@ -2,8 +2,7 @@
 # build.yml — Birch Street Law PLLC CI/CD Pipeline
 #
 # Triggers on push to main branch.
-# Builds the SvelteKit static site and uploads as an artifact.
-# FTP deploy to Dreamhost is stubbed out below (credentials TBD).
+# Builds the SvelteKit static site and deploys via SFTP to Dreamhost.
 # ============================================================
 
 name: Build & Deploy
@@ -14,8 +13,8 @@ on:
       - main
 
 jobs:
-  build:
-    name: Build SvelteKit Static Site
+  build-and-deploy:
+    name: Build & Deploy to Dreamhost
     runs-on: ubuntu-latest
 
     steps:
@@ -23,14 +22,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Set up Node.js (match local version)
+      # 2. Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
           cache: 'npm'
 
-      # 3. Install dependencies (clean install for reproducibility)
+      # 3. Install dependencies
       - name: Install dependencies
         run: npm ci
 
@@ -38,26 +37,22 @@ jobs:
       - name: Build
         run: npm run build
 
-      # 5. Upload build output as artifact
+      # 5. Upload build output as artifact (for debugging/inspection)
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:
           name: site
           path: build/
-          retention-days: 30
+          retention-days: 7
 
-      # ============================================================
-      # TODO: FTP Deploy to Dreamhost
-      # Uncomment and configure when Dreamhost credentials are ready.
-      #
-      # - name: Deploy via FTP to Dreamhost
-      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      #   with:
-      #     server: ${{ secrets.FTP_SERVER }}         # e.g., ftp.birchstreetlaw.com
-      #     username: ${{ secrets.FTP_USERNAME }}
-      #     password: ${{ secrets.FTP_PASSWORD }}
-      #     local-dir: ./build/
-      #     server-dir: /home/USERNAME/birchstreetlaw.com/  # adjust remote path
-      #
-      # Add these secrets in: GitHub repo → Settings → Secrets and variables → Actions
-      # ============================================================
+      # 6. Deploy via SFTP to Dreamhost
+      - name: Deploy via SFTP to Dreamhost
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: ${{ secrets.DREAMHOST_SFTP_USERNAME }}
+          server: ${{ secrets.DREAMHOST_SFTP_HOST }}
+          password: ${{ secrets.DREAMHOST_SFTP_PASSWORD }}
+          local_path: './build/*'
+          remote_path: ${{ secrets.DREAMHOST_SFTP_REMOTE_PATH }}
+          sftp_only: true
+          delete_remote_files: true
