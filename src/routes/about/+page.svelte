@@ -23,7 +23,7 @@
   <div class="container">
     <div class="bio-layout">
       <div class="bio-avatar">
-        <div class="bio-initial" aria-hidden="true">DS</div>
+        <img src="/bios/david-sisk.jpg" alt="David P. Sisk" class="bio-avatar-img" />
       </div>
       <div class="bio-content">
         <p class="bio-title">Managing Attorney</p>
@@ -82,7 +82,7 @@
   <div class="container">
     <div class="bio-layout">
       <div class="bio-avatar">
-        <div class="bio-initial bio-initial--mid" aria-hidden="true">RZ</div>
+        <img src="/bios/rebekah-zinn.jpg" alt="Rebekah Zinn" class="bio-avatar-img bio-avatar-img--mid" />
       </div>
       <div class="bio-content">
         <p class="bio-title">Mediator &amp; Of Counsel</p>
@@ -154,6 +154,22 @@
     flex-shrink: 0;
     letter-spacing: 0.05em;
     border: 3px solid var(--gold);
+  }
+
+  .bio-avatar-img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+    border: 3px solid var(--gold);
+    background-color: var(--navy);
+    flex-shrink: 0;
+  }
+
+  .bio-avatar-img--mid {
+    border-color: var(--gold-light);
+    background-color: var(--navy-mid);
   }
 
   .bio-initial--mid {
