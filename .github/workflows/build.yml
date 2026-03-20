@@ -1,0 +1,63 @@
+# ============================================================
+# build.yml — Birch Street Law PLLC CI/CD Pipeline
+#
+# Triggers on push to main branch.
+# Builds the SvelteKit static site and uploads as an artifact.
+# FTP deploy to Dreamhost is stubbed out below (credentials TBD).
+# ============================================================
+
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build SvelteKit Static Site
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout source
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Node.js (match local version)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      # 3. Install dependencies (clean install for reproducibility)
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Build the static site
+      - name: Build
+        run: npm run build
+
+      # 5. Upload build output as artifact
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: build/
+          retention-days: 30
+
+      # ============================================================
+      # TODO: FTP Deploy to Dreamhost
+      # Uncomment and configure when Dreamhost credentials are ready.
+      #
+      # - name: Deploy via FTP to Dreamhost
+      #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      #   with:
+      #     server: ${{ secrets.FTP_SERVER }}         # e.g., ftp.birchstreetlaw.com
+      #     username: ${{ secrets.FTP_USERNAME }}
+      #     password: ${{ secrets.FTP_PASSWORD }}
+      #     local-dir: ./build/
+      #     server-dir: /home/USERNAME/birchstreetlaw.com/  # adjust remote path
+      #
+      # Add these secrets in: GitHub repo → Settings → Secrets and variables → Actions
+      # ============================================================

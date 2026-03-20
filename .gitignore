@@ -1,0 +1,19 @@
+# SvelteKit build output
+.svelte-kit
+build
+
+# Dependencies
+node_modules
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env files (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/settings.json
+.idea

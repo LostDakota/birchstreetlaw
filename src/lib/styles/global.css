@@ -1,0 +1,374 @@
+/* ============================================================
+   Birch Street Law PLLC — Global Styles
+   Color Palette:
+     --green-deep:    #2c4a35  (forest green, primary)
+     --green-mid:     #4a7c59  (medium green)
+     --green-light:   #8ab89a  (light green accent)
+     --cream:         #f5f0e8  (warm off-white background)
+     --cream-dark:    #ede7d9  (slightly darker cream)
+     --gray-warm:     #857f74  (warm gray, body text muted)
+     --gray-dark:     #2d2b27  (near-black for body text)
+     --white:         #ffffff
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green-deep:  #2c4a35;
+  --green-mid:   #4a7c59;
+  --green-light: #8ab89a;
+  --cream:       #f5f0e8;
+  --cream-dark:  #ede7d9;
+  --gray-warm:   #857f74;
+  --gray-dark:   #2d2b27;
+  --white:       #ffffff;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans:  'Inter', system-ui, sans-serif;
+
+  --max-width: 1100px;
+  --nav-height: 70px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.14);
+
+  --radius: 4px;
+  --transition: 0.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--gray-dark);
+  background-color: var(--cream);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Typography ── */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--green-deep);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2.25rem); margin-bottom: 1rem; }
+h3 { font-size: clamp(1.2rem, 2vw, 1.6rem); margin-bottom: 0.75rem; }
+h4 { font-size: 1.1rem; }
+
+p { margin-bottom: 1rem; }
+p:last-child { margin-bottom: 0; }
+
+a {
+  color: var(--green-mid);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+a:hover { color: var(--green-deep); text-decoration: underline; }
+
+/* ── Layout helpers ── */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem;
+}
+
+.section--alt {
+  background-color: var(--cream-dark);
+}
+
+.section--dark {
+  background-color: var(--green-deep);
+  color: var(--cream);
+}
+
+.section--dark h2,
+.section--dark h3,
+.section--dark h4 {
+  color: var(--cream);
+}
+
+/* ── Buttons ── */
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: var(--radius);
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none !important;
+}
+
+.btn-primary {
+  background-color: var(--green-deep);
+  color: var(--white);
+  border: 2px solid var(--green-deep);
+}
+.btn-primary:hover {
+  background-color: var(--green-mid);
+  border-color: var(--green-mid);
+  color: var(--white);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--green-deep);
+  border: 2px solid var(--green-deep);
+}
+.btn-outline:hover {
+  background-color: var(--green-deep);
+  color: var(--white);
+}
+
+.btn-light {
+  background-color: var(--cream);
+  color: var(--green-deep);
+  border: 2px solid var(--cream);
+}
+.btn-light:hover {
+  background-color: transparent;
+  color: var(--cream);
+  border-color: var(--cream);
+}
+
+/* ── Birch branch divider ── */
+.birch-divider {
+  width: 100%;
+  max-width: 600px;
+  height: 32px;
+  margin-inline: auto;
+  margin-block: 2rem;
+  opacity: 0.35;
+}
+
+/* ── Utility ── */
+
+.text-center { text-align: center; }
+.text-muted { color: var(--gray-warm); }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+/* ── Cards ── */
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+  transition: box-shadow var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* ── Grid helpers ── */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ── Page hero (inner pages) ── */
+
+.page-hero {
+  background-color: var(--green-deep);
+  color: var(--cream);
+  padding-block: 4rem;
+  text-align: center;
+}
+
+.page-hero h1 {
+  color: var(--cream);
+}
+
+.page-hero p {
+  color: var(--green-light);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin-inline: auto;
+  margin-top: 0.75rem;
+}
+
+/* ── FAQ accordion (Mediation page) ── */
+
+.faq-item {
+  border-bottom: 1px solid var(--cream-dark);
+  padding-block: 1.5rem;
+}
+
+.faq-item:first-child {
+  border-top: 1px solid var(--cream-dark);
+}
+
+.faq-question {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--green-deep);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  user-select: none;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+}
+
+.faq-question .faq-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  color: var(--green-mid);
+  transition: transform var(--transition);
+}
+
+.faq-item[open] .faq-question .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  margin-top: 1rem;
+  color: var(--gray-dark);
+  max-width: 75ch;
+}
+
+/* ── Bio section ── */
+
+.bio-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 640px) {
+  .bio-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bio-initial {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--green-deep);
+  color: var(--white);
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bio-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--green-mid);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+/* ── Practice area icon cards ── */
+
+.practice-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  border-top: 3px solid var(--green-light);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.practice-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.practice-card .icon {
+  width: 40px;
+  height: 40px;
+  color: var(--green-mid);
+  margin-bottom: 1rem;
+}
+
+/* ── Footer ── */
+
+footer {
+  background-color: var(--green-deep);
+  color: var(--cream-dark);
+  padding-block: 3rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--green-light);
+}
+
+footer a:hover {
+  color: var(--cream);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 1.5rem;
+  text-align: center;
+  color: var(--gray-warm);
+  font-size: 0.8rem;
+}
+
+/* ── Responsive nav ── */
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: 3rem;
+  }
+}
