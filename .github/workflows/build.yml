@@ -2,7 +2,7 @@
 # build.yml — Birch Street Law PLLC CI/CD Pipeline
 #
 # Triggers on push to main branch.
-# Builds the SvelteKit static site and deploys via FTP to Dreamhost.
+# Builds the SvelteKit static site and deploys via SFTP to Dreamhost.
 # ============================================================
 
 name: Build & Deploy
@@ -37,7 +37,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      # 5. Upload build output as artifact (for debugging/inspection)
+      # 5. Upload build output as artifact
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:
@@ -45,14 +45,13 @@ jobs:
           path: build/
           retention-days: 7
 
-      # 6. Deploy via FTP to Dreamhost
-      - name: Deploy via FTP to Dreamhost
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.DREAMHOST_SFTP_HOST }}
-          username: ${{ secrets.DREAMHOST_SFTP_USERNAME }}
-          password: ${{ secrets.DREAMHOST_SFTP_PASSWORD }}
-          local-dir: ./build/
-          server-dir: /home/dh_wzakre/birchstreetlaw.com/
-          protocol: ftp
-          port: 21
+      # 6. Deploy via rsync over SSH (password-based)
+      - name: Install sshpass
+        run: sudo apt-get install -y sshpass
+
+      - name: Deploy via rsync over SSH
+        run: |
+          sshpass -p "${{ secrets.DREAMHOST_SFTP_PASSWORD }}" rsync -avz \
+            -e "ssh -p 22 -o StrictHostKeyChecking=no" \
+            ./build/ \
+            ${{ secrets.DREAMHOST_SFTP_USERNAME }}@${{ secrets.DREAMHOST_SFTP_HOST }}:/home/dh_wzakre/birchstreetlaw.com/
