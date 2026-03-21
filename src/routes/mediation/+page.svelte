@@ -65,6 +65,18 @@ For those attending mediation in-person, bringing a lunch and snacks is highly r
 <svelte:head>
   <title>Mediation Services — Birch Street Law PLLC</title>
   <meta name="description" content="Rebekah Zinn offers professional mediation services in Washington State. Resolve disputes outside of court — confidential, impartial, and effective." />
+  <link rel="canonical" href="https://birchstreetlaw.com/mediation" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Birch Street Law PLLC" />
+  <meta property="og:title" content="Mediation Services — Birch Street Law PLLC" />
+  <meta property="og:description" content="Attorney Rebekah Zinn, retired Superior Court Commissioner, offers professional mediation services in Washington State. Resolve disputes outside of court — confidential, impartial, and effective." />
+  <meta property="og:url" content="https://birchstreetlaw.com/mediation" />
+  <meta property="og:image" content="https://birchstreetlaw.com/og-image.jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mediation Services — Birch Street Law PLLC" />
+  <meta name="twitter:description" content="Attorney Rebekah Zinn, retired Superior Court Commissioner, offers professional mediation services in Washington State. Resolve disputes outside of court — confidential, impartial, and effective." />
 </svelte:head>
 
 <!-- Page Hero -->

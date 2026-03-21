@@ -1,0 +1,14 @@
+OG IMAGE PLACEHOLDER
+====================
+A 1200x630 Open Graph image should be created and placed at:
+  static/og-image.jpg
+
+Recommended content:
+- Birch Street Law PLLC logo/wordmark
+- Tagline: "Compassionate Counsel for Life's Most Important Moments"
+- Navy/gold color scheme matching the site brand
+- Dimensions: exactly 1200 x 630 pixels
+- Format: JPEG (optimized, ~200–400 KB)
+
+This image is referenced in all page <meta property="og:image"> tags as:
+  https://birchstreetlaw.com/og-image.jpg

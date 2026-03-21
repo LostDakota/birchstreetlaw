@@ -1,3 +1,5 @@
-# allow crawling everything by default
+# Allow all crawlers
 User-agent: *
 Disallow:
+
+Sitemap: https://birchstreetlaw.com/sitemap.xml

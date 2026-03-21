@@ -3,7 +3,19 @@
 -->
 <svelte:head>
   <title>Contact Birch Street Law PLLC — Shelton, Washington</title>
-  <meta name="description" content="Contact Birch Street Law PLLC by phone or email. Located in Shelton, Washington." />
+  <meta name="description" content="Contact Birch Street Law PLLC by phone or email. Call (360) 358-7445 or email info@birchstreetlaw.com. Located at 236 W. Birch Street, Shelton, WA 98584." />
+  <link rel="canonical" href="https://birchstreetlaw.com/contact" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Birch Street Law PLLC" />
+  <meta property="og:title" content="Contact Birch Street Law PLLC — Shelton, Washington" />
+  <meta property="og:description" content="Contact Birch Street Law PLLC by phone or email. Call (360) 358-7445 or email info@birchstreetlaw.com. Located at 236 W. Birch Street, Shelton, WA 98584." />
+  <meta property="og:url" content="https://birchstreetlaw.com/contact" />
+  <meta property="og:image" content="https://birchstreetlaw.com/og-image.jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Birch Street Law PLLC — Shelton, Washington" />
+  <meta name="twitter:description" content="Contact Birch Street Law PLLC by phone or email. Call (360) 358-7445 or email info@birchstreetlaw.com. Located at 236 W. Birch Street, Shelton, WA 98584." />
 </svelte:head>
 
 <!-- Page Hero -->

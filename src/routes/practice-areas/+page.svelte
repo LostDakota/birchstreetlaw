@@ -114,6 +114,18 @@ David understands the deep attachment people have to their land and homes, and h
 <svelte:head>
   <title>Practice Areas — Birch Street Law PLLC</title>
   <meta name="description" content="Birch Street Law PLLC handles probate, guardianship, estate planning, TEDRA litigation, elder protection, and real estate matters in Washington State." />
+  <link rel="canonical" href="https://birchstreetlaw.com/practice-areas" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Birch Street Law PLLC" />
+  <meta property="og:title" content="Practice Areas — Birch Street Law PLLC" />
+  <meta property="og:description" content="Birch Street Law PLLC handles probate, guardianship, estate planning, TEDRA litigation, elder protection, and real estate matters in Shelton, WA and throughout Washington State." />
+  <meta property="og:url" content="https://birchstreetlaw.com/practice-areas" />
+  <meta property="og:image" content="https://birchstreetlaw.com/og-image.jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Practice Areas — Birch Street Law PLLC" />
+  <meta name="twitter:description" content="Birch Street Law PLLC handles probate, guardianship, estate planning, TEDRA litigation, elder protection, and real estate matters in Shelton, WA and throughout Washington State." />
 </svelte:head>
 
 <!-- Page Hero -->

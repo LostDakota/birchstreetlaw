@@ -9,6 +9,18 @@
 <svelte:head>
   <title>Birch Street Law PLLC — Probate, Estate Planning & Mediation | Shelton, WA</title>
   <meta name="description" content="Birch Street Law PLLC offers compassionate legal services in probate, guardianship, estate planning, TEDRA litigation, and mediation in Shelton, Washington." />
+  <link rel="canonical" href="https://birchstreetlaw.com/" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Birch Street Law PLLC" />
+  <meta property="og:title" content="Birch Street Law PLLC — Probate, Estate Planning & Mediation | Shelton, WA" />
+  <meta property="og:description" content="Birch Street Law PLLC offers compassionate legal services in probate, guardianship, estate planning, TEDRA litigation, and mediation in Shelton, Washington." />
+  <meta property="og:url" content="https://birchstreetlaw.com/" />
+  <meta property="og:image" content="https://birchstreetlaw.com/og-image.jpg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Birch Street Law PLLC — Probate, Estate Planning & Mediation | Shelton, WA" />
+  <meta name="twitter:description" content="Birch Street Law PLLC offers compassionate legal services in probate, guardianship, estate planning, TEDRA litigation, and mediation in Shelton, Washington." />
 </svelte:head>
 
 <!-- ── Hero ── -->

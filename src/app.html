@@ -10,6 +10,65 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 		%sveltekit.head%
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "LegalService",
+			"name": "Birch Street Law PLLC",
+			"url": "https://birchstreetlaw.com",
+			"telephone": "(360) 358-7445",
+			"email": "info@birchstreetlaw.com",
+			"logo": "https://birchstreetlaw.com/favicon.svg",
+			"image": "https://birchstreetlaw.com/og-image.jpg",
+			"description": "Compassionate Counsel for Life's Most Important Moments. Probate, Estate Planning, Guardianship, TEDRA Litigation, and Mediation services in Shelton, WA.",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "236 W. Birch Street",
+				"addressLocality": "Shelton",
+				"addressRegion": "WA",
+				"postalCode": "98584",
+				"addressCountry": "US"
+			},
+			"areaServed": [
+				{
+					"@type": "City",
+					"name": "Shelton",
+					"containedInPlace": {
+						"@type": "State",
+						"name": "Washington"
+					}
+				},
+				{
+					"@type": "AdministrativeArea",
+					"name": "Mason County, Washington"
+				}
+			],
+			"serviceType": [
+				"Probate",
+				"Estate Planning",
+				"Guardianship",
+				"TEDRA Litigation",
+				"Mediation",
+				"Elder and Vulnerable Adult Protection",
+				"Real Estate Law"
+			],
+			"employee": [
+				{
+					"@type": "Person",
+					"name": "David P. Sisk",
+					"jobTitle": "Managing Attorney"
+				},
+				{
+					"@type": "Person",
+					"name": "Rebekah Zinn",
+					"jobTitle": "Associate Attorney and Mediator"
+				}
+			],
+			"sameAs": [
+				"https://birchstreetlaw.com"
+			]
+		}
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div id="app">%sveltekit.body%</div>
