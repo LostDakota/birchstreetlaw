@@ -7,7 +7,7 @@
 
 <svelte:head>
   <title>About Our Team — Birch Street Law PLLC</title>
-  <meta name="description" content="Meet the team at Birch Street Law PLLC: David P. Sisk (Managing Attorney), Rebekah Zinn (Retired Superior Court Commissioner and Mediator), and Sooyoung "Sue" Lee (Legal Assistant & Bookkeeper)." />
+  <meta name="description" content="Meet the team at Birch Street Law PLLC: David P. Sisk (Managing Attorney), Rebekah Zinn (Retired Superior Court Commissioner and Mediator), and Sooyoung &quot;Sue&quot; Lee (Legal Assistant &amp; Bookkeeper)." />
   <link rel="canonical" href="https://birchstreetlaw.com/about" />
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
