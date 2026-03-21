@@ -1,0 +1,12 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Serve existing files/directories directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Route everything else to the SvelteKit prerendered pages
+RewriteRule ^([^/]+)/?$ /$1/index.html [L]
+RewriteRule ^([^/]+)/([^/]+)/?$ /$1/$2/index.html [L]
