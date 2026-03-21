@@ -31,7 +31,7 @@
           <li>
             <a href="tel:13603587445">(360) 358-7445</a>
           </li>
-          <li>Shelton, Washington</li>
+          <li>236 W. Birch Street, Shelton, WA 98584</li>
         </ul>
       </div>
     </div>
