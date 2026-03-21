@@ -37,7 +37,7 @@
   </div>
 
   <div class="container hero-content">
-    <p class="hero-eyebrow">Shelton, Washington</p>
+    <p class="hero-eyebrow">Serving Mason and Thurston Counties</p>
     <h1>Birch Street Law PLLC</h1>
     <p class="hero-tagline">Compassionate Counsel for Life's Most Important Moments</p>
     <p class="hero-sub">
