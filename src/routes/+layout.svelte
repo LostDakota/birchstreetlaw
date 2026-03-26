@@ -3,7 +3,8 @@
   Root layout: imports global CSS, wraps every page with Nav + Footer.
 -->
 <script>
-  import '../lib/styles/global.css';
+<link rel="stylesheet" href="%sveltekit.assets%/global.css" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="%sveltekit.assets%/global.css" /></noscript>
   import Nav from '../lib/Nav.svelte';
   import Footer from '../lib/Footer.svelte';
   import { afterNavigate } from '$app/navigation';
