@@ -125,7 +125,7 @@ a:hover { color: var(--navy); text-decoration: underline; }
   letter-spacing: 0.04em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: all var(--transition);
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
   text-decoration: none !important;
 }
 
@@ -191,7 +191,6 @@ a:hover { color: var(--navy); text-decoration: underline; }
   border-radius: var(--radius);
   box-shadow: var(--shadow-sm);
   padding: 2rem;
-  transition: box-shadow var(--transition);
 }
 
 .card:hover {
@@ -326,7 +325,7 @@ a:hover { color: var(--navy); text-decoration: underline; }
   padding: 1.75rem;
   box-shadow: var(--shadow-sm);
   border-top: 3px solid var(--gold);
-  transition: box-shadow var(--transition), transform var(--transition);
+  transition: transform var(--transition);
 }
 
 .practice-card:hover {
